@@ -1,0 +1,18 @@
+version: "3"
+services:
+  jupyter:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    volumes:
+      - $PWD:/tmp/working
+
+    working_dir: /tmp/working
+
+    ports:
+      - 8888:8888
+
+    command: jupyter notebook --ip=0.0.0.0 --allow-root --no-browser
+    # --ip=0.0.0.0は起動したJupyter Notebookにコンテナ外からアクセスできるようにするオプション
+    # --no-browserはJupyter Notebook起動時にブラウザを立ち上げないオプション

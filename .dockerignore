@@ -1,0 +1,4 @@
+# build時に以下のファイルを除外する
+input
+notebook
+script
