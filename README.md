@@ -1,1 +1,4 @@
 # docker_kaggle
+
+分析コンペが開かれるプラットフォームKaggleのためのDockerを用いた実行環境<br>
+Kaggleで使いたいライブラリなどはインストールされている
