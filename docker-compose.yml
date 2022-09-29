@@ -7,6 +7,8 @@ services:
 
     volumes:
       - $PWD:/tmp/working
+      - ~/.ssh:/root/.ssh:ro
+      - ~/.gitconfig:/root/.gitconfig:ro
 
     working_dir: /tmp/working
 
