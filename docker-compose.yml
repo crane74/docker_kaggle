@@ -15,6 +15,6 @@ services:
     ports:
       - 8888:8888
 
-    command: jupyter notebook --ip=0.0.0.0 --allow-root --no-browser
+    command: jupyter lab --ip=0.0.0.0 --allow-root --no-browser
     # --ip=0.0.0.0は起動したJupyter Notebookにコンテナ外からアクセスできるようにするオプション
     # --no-browserはJupyter Notebook起動時にブラウザを立ち上げないオプション
